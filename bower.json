@@ -1,7 +1,7 @@
 {
-  "name": "taaabs-trace-details",
+  "name": "taaabs-trace-details-container",
   "version": "1.0.0",
-  "description": "Graphical element that displays the main stats of a ktbs trace.",
+  "description": "Graphical element that displays the main stats of a ktbs trace, and some to tools to work with the trace.",
   "keywords": [
     "web-components",
     "polymer",
@@ -12,18 +12,20 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/TaaabsElements/taaabs-trace-details.git"
+    "url": "https://github.com/TaaabsElements/taaabs-trace-details-container.git"
   },
-  "main": "taaabs-trace-details.html",
-  "license": "https://github.com/TaaabsElements/taaabs-trace-details/LICENSE",
+  "main": "taaabs-trace-details-container.html",
+  "license": "https://github.com/TaaabsElements/taaabs-trace-details-container/LICENSE",
   "dependencies": {
     "polymer": "polymer/polymer",
-    "iron-collapse": "PolymerElements/iron-collapse",
-    "iron-icon": "PolymerElements/iron-icon",
-    "iron-icons": "PolymerElements/iron-icons",
+    "paper-button": "PolymerElements/paper-button",
     "google-chart": "GoogleWebComponents/google-chart",
     "taaabs-themes": "TaaabsElements/taaabs-themes",
-    "taaabs-time-utilities": "TaaabsElements/taaabs-time-utilities"
+    "taaabs-time-utilities": "TaaabsElements/taaabs-time-utilities",
+    "taaabs-trace-histogram": "TaaabsElements/taaabs-trace-histogram",
+    "taaabs-trace-details": "TaaabsElements/taaabs-trace-details",
+    "taaabs-trace-split": "TaaabsElements/taaabs-trace-split",
+    "notify-toast-behavior": "Yepikae/notify-toast-behavior"
   },
   "devDependencies": {
     "iron-component-page": "polymerelements/iron-component-page#^1.0.0",
