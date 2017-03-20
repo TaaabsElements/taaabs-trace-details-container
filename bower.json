@@ -1,0 +1,33 @@
+{
+  "name": "taaabs-trace-details",
+  "version": "1.0.0",
+  "description": "Graphical element that displays the main stats of a ktbs trace.",
+  "keywords": [
+    "web-components",
+    "polymer",
+    "taaabs"
+  ],
+  "authors": [
+    "Rémi Casado"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TaaabsElements/taaabs-trace-details.git"
+  },
+  "main": "taaabs-trace-details.html",
+  "license": "https://github.com/TaaabsElements/taaabs-trace-details/LICENSE",
+  "dependencies": {
+    "polymer": "polymer/polymer",
+    "iron-collapse": "PolymerElements/iron-collapse",
+    "iron-icon": "PolymerElements/iron-icon",
+    "iron-icons": "PolymerElements/iron-icons",
+    "google-chart": "GoogleWebComponents/google-chart",
+    "taaabs-themes": "TaaabsElements/taaabs-themes",
+    "taaabs-time-utilities": "TaaabsElements/taaabs-time-utilities"
+  },
+  "devDependencies": {
+    "iron-component-page": "polymerelements/iron-component-page#^1.0.0",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
+  },
+  "ignore": []
+}
