@@ -10,6 +10,8 @@
 <link rel="import" href="../taaabs-trace-details/taaabs-trace-details.html">
 <link rel="import" href="../taaabs-trace-split/taaabs-trace-split-histogram.html">
 <link rel="import" href="../notify-toast-behavior/notify-toast-behavior.html">
+<!-- TODO Replace with real link -->
+<!-- <link rel="import" href="../taaabs-spare/taaabs-spare.html"> -->
 
 <dom-module id="taaabs-trace-details-container">
   <template>
@@ -141,7 +143,10 @@
           .then(function() {
             var atts = [];
             for(var i=0; i < this._model.list_type_attributes.length; i++){
-              atts.push(this._uriToName(this._model.list_type_attributes[i]['@id']));
+              atts.push({
+                'name': this._uriToName(this._model.list_type_attributes[i]['@id']),
+                'datatype': this._model.list_type_attributes[i]['hasAttributeDatatype'][0]
+              });
             }
             elem.setAttributesList(atts);
           }.bind(this))
@@ -161,7 +166,7 @@
 
       _onSpareClick: function() {
         // Create the taaabs-spare
-        var elem = document.createElement('taaabs-spare');
+        var elem = new TAAABS.TaaabsSpare();
         elem.set('language', this.language);
         elem.set('_trace', this._trace);
         elem.set('traceUrl', this.traceUrl);
@@ -171,6 +176,7 @@
           cont.removeChild(cont.firstChild);
         }
         cont.appendChild(elem);
+        elem.refresh();
       },
       _onTimelineClick: function() {
         this.fire('timeline-link-clicked');
