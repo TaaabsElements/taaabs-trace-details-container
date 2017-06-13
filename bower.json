@@ -17,18 +17,19 @@
   "main": "taaabs-trace-details-container.html",
   "license": "https://github.com/TaaabsElements/taaabs-trace-details-container/LICENSE",
   "dependencies": {
-    "polymer": "Polymer/polymer#<2.*",
-    "paper-button": "PolymerElements/paper-button#<2.*",
-    "google-chart": "GoogleWebComponents/google-chart#<2.*",
-    "taaabs-themes": "TaaabsElements/taaabs-themes",
-    "taaabs-time-utilities": "TaaabsElements/taaabs-time-utilities",
+    "google-chart"          : "GoogleWebComponents/google-chart#<2.*",
+    "paper-button"          : "PolymerElements/paper-button#<2.*",
+    "polymer"               : "Polymer/polymer#<2.*",
+    "taaabs-spare"          : "TaaabsElements/taaabs-spare",
+    "taaabs-themes"         : "TaaabsElements/taaabs-themes",
+    "taaabs-time-utilities" : "TaaabsElements/taaabs-time-utilities",
+    "notify-toast-behavior" : "Yepikae/notify-toast-behavior",
+    "taaabs-trace-details"  : "TaaabsElements/taaabs-trace-details",
     "taaabs-trace-histogram": "TaaabsElements/taaabs-trace-histogram",
-    "taaabs-trace-details": "TaaabsElements/taaabs-trace-details",
-    "taaabs-trace-split": "TaaabsElements/taaabs-trace-split",
-    "notify-toast-behavior": "Yepikae/notify-toast-behavior"
+    "taaabs-trace-split"    : "TaaabsElements/taaabs-trace-split"
   },
   "devDependencies": {
-    "iron-component-page": "polymerelements/iron-component-page#^1.0.0",
+    "iron-component-page": "polymerelements/iron-component-page#<2.*",
     "webcomponentsjs": "webcomponents/webcomponentsjs#^0.7.0"
   },
   "ignore": []

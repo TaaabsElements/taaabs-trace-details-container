@@ -11,7 +11,7 @@
 <link rel="import" href="../taaabs-trace-split/taaabs-trace-split-histogram.html">
 <link rel="import" href="../notify-toast-behavior/notify-toast-behavior.html">
 <!-- TODO Replace with real link -->
-<!-- <link rel="import" href="../taaabs-spare/taaabs-spare.html"> -->
+<link rel="import" href="../taaabs-spare/taaabs-spare.html">
 
 <dom-module id="taaabs-trace-details-container">
   <template>
@@ -43,7 +43,7 @@
           <paper-button noink toggles disabled on-click="_onTransformClick">transform</paper-button>
         </div>
       </div>
-      <div id="tool-container" class="flexchild fit-width relative">
+      <div id="tool-container" class="flex-vertical flexchild fit-width relative">
       </div>
     </div>
     <!-- Notify toast -->
@@ -167,6 +167,7 @@
       _onSpareClick: function() {
         // Create the taaabs-spare
         var elem = new TAAABS.TaaabsSpare();
+        elem.classList.add('flexchild', 'swag-scroll');
         elem.set('language', this.language);
         elem.set('_trace', this._trace);
         elem.set('traceUrl', this.traceUrl);
